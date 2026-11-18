@@ -10,22 +10,37 @@ I build medical imaging products end to end: image analysis and AI models, backe
 
 - B.Tech, Artificial Intelligence & Data Science (2024)
 - Work across the full medical imaging stack, from DICOM ingestion to the final report
-- Each project here is built, documented and packaged so it runs with one command
+- Building a public portfolio of personal medical imaging projects, one repository at a time
 
 ### What I build
 
-- **Image analysis engines**: CT perfusion, tracer-kinetic analysis, segmentation, registration, quality control
+- **Image analysis engines**: perfusion and tracer-kinetic analysis, segmentation, registration, quality control
 - **AI models for imaging**: segmentation and detection with PyTorch, nnU-Net, MONAI and YOLO, with Grad-CAM for explainability
 - **Clinical-style web apps**: worklists, multi-panel DICOM viewers, structured reports with PDF export
 - **APIs and deployment**: FastAPI services packaged with Docker Compose and Nginx, for cloud or on-premise use
 
 ---
 
+### How I build a project
+
+Each project follows the same path, from raw images to something a person can use:
+
+1. **Data in**: read DICOM / NIfTI studies, handle messy folder layouts, check image quality
+2. **Analysis**: image processing, physics-based models or deep learning, depending on the problem
+3. **API**: a FastAPI service that runs the analysis and stores results
+4. **Web app**: a React and TypeScript worklist, image viewer and report
+5. **Deployment**: Docker Compose and Nginx, so it runs on any computer with one command
+6. **Validation**: tested on public research data, with results and limitations written down
+
+---
+
 ### Projects
+
+New personal projects are in progress. Each one will be listed here with its results as its repository goes public.
 
 | Project | What it does | Stack | Results | Status |
 |---|---|---|---|---|
-| [Stroke CT Perfusion](https://github.com/Faiyyaz-Hangad/stroke-ct-perfusion) | Physics-based CT perfusion analysis for acute stroke: CBF, CBV, MTT and Tmax maps, ischemic core, tissue at risk, mismatch and DEFUSE-3 criteria, with a web viewer and editable radiology-format report | Python, FastAPI, React, TypeScript, Docker | On 127 held-out ISLES 2024 cases vs commercial perfusion software: stroke side 106/108, DEFUSE-3 decision 102/114, core volume correlation 0.91 | v1.1 · research prototype |
+| Coming soon | | | | |
 
 <sub>All medical projects here are research prototypes, not medical devices.</sub>
 
